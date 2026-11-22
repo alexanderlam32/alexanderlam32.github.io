@@ -152,6 +152,37 @@
       background: #000;
     }
 
+    /* EMBEDDED PDF VIEWER */
+
+    .proposal-preview {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    .proposal-preview object {
+      display: block;
+      width: 100%;
+      height: 700px;
+      border: none;
+      background: #202124;
+    }
+
+    .proposal-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #10233d;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .proposal-link:hover {
+      background: #244a72;
+    }
+
     /* PROJECT DETAILS */
 
     .project-details {
@@ -271,6 +302,10 @@
       .project-divider {
         margin: 45px 0;
       }
+
+      .proposal-preview object {
+        height: 450px;
+      }
     }
   </style>
 </head>
@@ -357,7 +392,8 @@
             </li>
 
             <li>
-              Minimizing control arm mass improves vehicle dynamics due to less unsprung mass
+              Minimizing control arm mass improves vehicle dynamics
+              due to less unsprung mass.
             </li>
           </ul>
         </div>
@@ -369,7 +405,8 @@
 
           <ul>
             <li>
-              Developed redesigned suspension control arms using <strong>SolidWorks</strong> with a focus on
+              Developed redesigned suspension control arms using
+              <strong>SolidWorks</strong> with a focus on
               optimizing tubing dimensions to minimize weight.
             </li>
 
@@ -417,8 +454,8 @@
             </li>
 
             <li>
-              Reduced the vehicle unsprung mass, supporting improved wheel
-              responsiveness and vehicle dynamics.
+              Reduced the vehicle unsprung mass, supporting
+              improved wheel responsiveness and vehicle dynamics.
             </li>
           </ul>
         </div>
@@ -430,7 +467,136 @@
 
     <div class="project-divider" aria-hidden="true"></div>
 
-    <!-- PROJECT 2: FSAE STEERING RACK PROTECTION -->
+    <!-- PROJECT 2: NASA L'SPACE AICH -->
+
+    <section class="project">
+
+      <div class="project-heading">
+        <h2>
+          NASA L'SPACE - ASCENT Integrated Catalyst Heater (AICH)
+        </h2>
+      </div>
+
+      <!-- EMBEDDED PDF -->
+
+      <div class="proposal-preview">
+
+        <object
+          data="Title.pdf#toolbar=1&amp;navpanes=0&amp;view=FitH"
+          type="application/pdf"
+          aria-label="NASA L'SPACE AICH Technology Proposal Cover Page">
+
+          <p style="color: white; padding: 25px;">
+            Your browser does not support embedded PDFs.
+            Use the link below to view the proposal cover page.
+          </p>
+
+        </object>
+
+        <a
+          class="proposal-link"
+          href="Title.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+          View Proposal Cover Page
+        </a>
+
+      </div>
+
+      <div class="project-details">
+
+        <!-- WHAT -->
+
+        <div class="project-column">
+          <h3>What?</h3>
+
+          <ul>
+            <li>
+              Addressed a technological need identified by
+              <strong>NASA Marshall Space Flight Center</strong>
+              through the development of an innovative technology
+              proposal.
+            </li>
+
+            <li>
+              Sought to improve the operational efficiency
+              of existing <strong>spacecraft propulsion technology</strong>.
+            </li>
+
+            <li>
+              Required consideration of technical feasibility,
+              performance requirements, and development costs.
+            </li>
+          </ul>
+        </div>
+
+        <!-- HOW -->
+
+        <div class="project-column">
+          <h3>How?</h3>
+
+          <ul>
+            <li>
+              <strong>Led a multidisciplinary team</strong> in
+              the research, conceptual development, and preparation
+              of a comprehensive technology proposal.
+            </li>
+
+            <li>
+              Consulted with <strong>NASA propulsion engineers</strong>
+              to assess technical feasibility and identify potential
+              design improvements.
+            </li>
+
+            <li>
+              Conducted <strong>engineering trade studies</strong>
+              to evaluate design alternatives against technical
+              requirements and performance objectives.
+            </li>
+
+            <li>
+              Developed a <strong>technology maturation plan</strong>
+              incorporating risk assessments, budget estimates,
+              and project milestones.
+            </li>
+          </ul>
+        </div>
+
+        <!-- RESULTS -->
+
+        <div class="project-column">
+          <h3>Results</h3>
+
+          <ul>
+            <li>
+              Projected a <strong>38% reduction in heater power
+              requirements</strong> compared to the baseline design.
+            </li>
+
+            <li>
+              Advanced from initial concept selection to full
+              technical proposal development, detailing technical
+              feasibility, development milestones, and cost
+              considerations.
+            </li>
+
+            <li>
+              Successfully submitted a
+              <strong>New Technology Report (NTR)</strong>
+              documenting the proposed innovation, its technical
+              capabilities, and potential applications.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DIVIDER 2 -->
+
+    <div class="project-divider" aria-hidden="true"></div>
+
+    <!-- PROJECT 3: FSAE STEERING RACK PROTECTION -->
 
     <section class="project">
 
@@ -564,11 +730,11 @@
       </div>
     </section>
 
-    <!-- DIVIDER 2 -->
+    <!-- DIVIDER 3 -->
 
     <div class="project-divider" aria-hidden="true"></div>
 
-    <!-- PROJECT 3: PONG WARS -->
+    <!-- PROJECT 4: PONG WARS -->
 
     <section class="project">
 
@@ -594,7 +760,9 @@
             playsinline
             preload="metadata"
             aria-label="Pong Wars gameplay demonstration">
+
             <source src="Pong.mp4" type="video/mp4">
+
             Your browser does not support HTML5 video.
           </video>
         </figure>
@@ -630,7 +798,7 @@
             </li>
 
             <li>
-              Explored collision physics</strong> to simulate dynamic
+              Explored collision physics to simulate dynamic
               ball movement and interactive gameplay.
             </li>
           </ul>
@@ -684,9 +852,9 @@
             </li>
 
             <li>
-              Implemented physics-based collision
-              mechanics</strong> to enable automated paddle
-              control and dynamic ball interactions.
+              Implemented physics-based collision mechanics
+              to enable automated paddle control and dynamic
+              ball interactions.
             </li>
 
             <li>
@@ -701,11 +869,11 @@
       </div>
     </section>
 
-    <!-- DIVIDER 3 -->
+    <!-- DIVIDER 4 -->
 
     <div class="project-divider" aria-hidden="true"></div>
 
-    <!-- PROJECT 4: CLIMATE TREND ANALYSIS MODEL -->
+    <!-- PROJECT 5: CLIMATE TREND ANALYSIS MODEL -->
 
     <section class="project">
 
