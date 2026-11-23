@@ -19,14 +19,15 @@
       line-height: 1.6;
     }
 
-    /* Navigation */
+    /* Navigation Bar */
     nav {
       background-color: #10233d;
-      padding: 18px 25px;
       display: flex;
       justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
       gap: 30px;
+      padding: 18px 25px;
     }
 
     nav a {
@@ -34,7 +35,7 @@
       text-decoration: none;
       font-size: 16px;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
@@ -95,6 +96,12 @@
       background-color: #10233d;
     }
 
+    /* Show Entire Exhaust Photo */
+    .gallery-item img.exhaust-photo {
+      object-fit: contain;
+    }
+
+    /* Show Entire Video */
     .gallery-item video {
       object-fit: contain;
     }
@@ -195,12 +202,12 @@
 
         <!-- Exhaust Installation Photo -->
         <div class="gallery-item">
-         <img
-  src="Exhaust1.jpg"
-  alt="Installing AWE Track cat-back exhaust on Nissan Z"
-  loading="lazy"
-  style="object-fit: contain;"
->
+          <img
+            src="Exhaust1.jpg"
+            class="exhaust-photo"
+            alt="Installing AWE Track cat-back exhaust on Nissan Z"
+            loading="lazy"
+          >
           <p class="gallery-caption">
             Installing the AWE Track Catback Exhaust System
             on my Nissan Z
