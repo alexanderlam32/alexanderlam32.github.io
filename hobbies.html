@@ -23,7 +23,7 @@
       line-height: 1.6;
     }
 
-    /* NAVIGATION - SAME AS PROJECTS PAGE */
+    /* NAVIGATION */
 
     nav {
       background: #10233d;
@@ -58,7 +58,7 @@
       color: #7db8ff;
     }
 
-    /* PAGE HEADER - SAME AS PROJECTS PAGE */
+    /* PAGE HEADER */
 
     .page-header {
       background: linear-gradient(135deg, #10233d, #244a72);
@@ -86,7 +86,7 @@
       padding: 0 25px;
     }
 
-    /* LAVENDER SECTION HEADING */
+    /* LAVENDER SECTION HEADINGS */
 
     .hobby-heading {
       background: #f0effa;
@@ -103,7 +103,18 @@
       text-transform: uppercase;
     }
 
-    /* AUTOMOBILES 2x2 GALLERY */
+    /* HOBBY INTRODUCTIONS */
+
+    .hobby-blurb {
+      font-size: 17px;
+      line-height: 1.75;
+      text-align: center;
+      max-width: 1050px;
+      margin: 0 auto 30px;
+      color: #243247;
+    }
+
+    /* TWO-COLUMN GALLERIES */
 
     .hobby-gallery {
       display: grid;
@@ -135,20 +146,28 @@
       display: block;
     }
 
-    /* DISPLAY ENTIRE EXHAUST PHOTO */
+    /* SHOW ENTIRE EXHAUST PHOTO */
 
     .gallery-media img.exhaust-photo {
       object-fit: contain;
     }
 
-    /* DISPLAY ENTIRE VIDEO */
+    /* SHOW ENTIRE VIDEO */
 
     .gallery-media video {
       object-fit: contain;
       background: #000;
     }
 
-    /* PHOTO AND VIDEO CAPTIONS */
+    /* CENTER ESPN PHOTO ON SECOND ROW */
+
+    .gallery-item.centered-item {
+      grid-column: 1 / -1;
+      width: calc((100% - 25px) / 2);
+      justify-self: center;
+    }
+
+    /* CAPTIONS */
 
     .gallery-caption {
       color: #243247;
@@ -167,7 +186,7 @@
       margin: 65px 0;
     }
 
-    /* FOOTER - SAME AS PROJECTS PAGE */
+    /* FOOTER */
 
     footer {
       background: #10233d;
@@ -187,9 +206,13 @@
       .gallery-media {
         height: 300px;
       }
+
+      .gallery-item.centered-item {
+        width: calc((100% - 20px) / 2);
+      }
     }
 
-    /* MOBILE - SAME BREAKPOINT AS PROJECTS PAGE */
+    /* MOBILE */
 
     @media (max-width: 700px) {
       nav {
@@ -222,6 +245,11 @@
         font-size: 24px;
       }
 
+      .hobby-blurb {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+
       .hobby-gallery {
         grid-template-columns: 1fr;
         gap: 25px;
@@ -229,6 +257,11 @@
 
       .gallery-media {
         height: 260px;
+      }
+
+      .gallery-item.centered-item {
+        grid-column: auto;
+        width: 100%;
       }
 
       .gallery-caption {
@@ -274,6 +307,14 @@
       <div class="hobby-heading">
         <h2>Automobiles</h2>
       </div>
+
+      <p class="hobby-blurb">
+        Outside of school, I enjoy everything that has
+        4 (or 2) wheels and moves (ideally powered by an
+        IC engine). I enjoy going to car meets, modifying
+        or doing maintenance on cars and bikes, and
+        rolling around town!
+      </p>
 
       <div class="hobby-gallery">
 
@@ -342,6 +383,76 @@
 
           <figcaption class="gallery-caption">
             My Ninja 500 I like riding around the city on
+          </figcaption>
+        </figure>
+
+      </div>
+
+    </section>
+
+    <!-- DIVIDER -->
+
+    <div class="hobby-divider" aria-hidden="true"></div>
+
+    <!-- HOBBY 2: SPORTS -->
+
+    <section class="hobby">
+
+      <div class="hobby-heading">
+        <h2>Sports</h2>
+      </div>
+
+      <p class="hobby-blurb">
+        I am a huge fan of sports. I enjoy watching
+        College Football, College Basketball, NFL, NBA,
+        and F1. Feel free to reach out so we can discuss
+        why the Texans are the best team in the NFL.
+      </p>
+
+      <div class="hobby-gallery">
+
+        <!-- LONE STAR LE MANS -->
+
+        <figure class="gallery-item">
+          <div class="gallery-media">
+            <img
+              src="COTA.jpg"
+              alt="2026 Lone Star Le Mans at Circuit of the Americas"
+              loading="lazy">
+          </div>
+
+          <figcaption class="gallery-caption">
+            2026 Lone Star Le Mans
+          </figcaption>
+        </figure>
+
+        <!-- UH VS OK STATE -->
+
+        <figure class="gallery-item">
+          <div class="gallery-media">
+            <img
+              src="FB1.jpg"
+              alt="University of Houston versus Oklahoma State football game"
+              loading="lazy">
+          </div>
+
+          <figcaption class="gallery-caption">
+            UH vs. OK State
+          </figcaption>
+        </figure>
+
+        <!-- ESPN APPEARANCE - CENTERED SECOND ROW -->
+
+        <figure class="gallery-item centered-item">
+          <div class="gallery-media">
+            <img
+              src="ESPN.png"
+              alt="Surprise appearance on ESPN"
+              loading="lazy">
+          </div>
+
+          <figcaption class="gallery-caption">
+            Surprise appearance on ESPN
           </figcaption>
         </figure>
 
