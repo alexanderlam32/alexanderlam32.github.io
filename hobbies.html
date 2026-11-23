@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies | Alexander Lam</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      color: #10233d;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #10233d;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c5c4e8;
+    }
+
+    /* Page Header */
+    .page-header {
+      background: linear-gradient(135deg, #10233d, #244a72);
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .page-header h1 {
+      color: #f0effa;
+      font-size: 44px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    /* Main Content */
+    .hobbies-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 55px 35px 80px;
+    }
+
+    /* Hobby Heading */
+    .hobby-heading {
+      text-align: center;
+      color: #10233d;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      margin: 0 0 35px;
+      text-transform: uppercase;
+    }
+
+    /* 2x2 Gallery */
+    .hobby-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 35px;
+    }
+
+    .gallery-item {
+      text-align: center;
+      min-width: 0;
+    }
+
+    .gallery-item img,
+    .gallery-item video {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+      background-color: #10233d;
+    }
+
+    .gallery-item video {
+      object-fit: contain;
+    }
+
+    .gallery-caption {
+      font-size: 17px;
+      font-weight: 500;
+      color: #10233d;
+      margin: 15px 10px 0;
+      line-height: 1.5;
+    }
+
+    /* Divider for Future Hobbies */
+    .hobby-divider {
+      border: none;
+      height: 3px;
+      background-color: #10233d;
+      margin: 65px 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #10233d;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    /* Mobile Layout */
+    @media (max-width: 768px) {
+      nav {
+        gap: 15px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+
+      .page-header {
+        padding: 45px 20px;
+      }
+
+      .page-header h1 {
+        font-size: 34px;
+      }
+
+      .hobbies-container {
+        padding: 35px 20px 60px;
+      }
+
+      .hobby-heading {
+        font-size: 25px;
+      }
+
+      .hobby-gallery {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .gallery-item img,
+      .gallery-item video {
+        height: auto;
+        aspect-ratio: 4 / 3;
+      }
+
+      .gallery-caption {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Work Experience</a>
+    <a href="hobbies.html">Hobbies</a>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>BEYOND ENGINEERING</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="hobbies-container">
+
+    <!-- Automobiles -->
+    <section class="hobby-section">
+
+      <h2 class="hobby-heading">AUTOMOBILES</h2>
+
+      <div class="hobby-gallery">
+
+        <!-- Exhaust Installation Photo -->
+        <div class="gallery-item">
+          <img
+            src="Exhaust1.jpg"
+            alt="Installing AWE Track cat-back exhaust on Nissan Z"
+            loading="lazy"
+          >
+          <p class="gallery-caption">
+            Installing the AWE Track Catback Exhaust System
+            on my Nissan Z
+          </p>
+        </div>
+
+        <!-- Exhaust Walkthrough Video -->
+        <div class="gallery-item">
+          <video controls playsinline preload="metadata">
+            <source src="Exhaust2.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <p class="gallery-caption">
+            Walkthrough of the finished exhaust install
+          </p>
+        </div>
+
+        <!-- Cold Air Intakes -->
+        <div class="gallery-item">
+          <img
+            src="Intake.jpg"
+            alt="AMS cold air intakes installed on Nissan Z"
+            loading="lazy"
+          >
+          <p class="gallery-caption">
+            AMS Cold Air Intakes for the Z
+          </p>
+        </div>
+
+        <!-- Kawasaki Ninja 500 -->
+        <div class="gallery-item">
+          <img
+            src="Bike.jpg"
+            alt="My Kawasaki Ninja 500 motorcycle"
+            loading="lazy"
+          >
+          <p class="gallery-caption">
+            My Ninja 500 I like riding around the city on
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Alexander Lam. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
