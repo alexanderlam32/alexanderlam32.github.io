@@ -230,6 +230,35 @@
       margin-bottom: 0;
     }
 
+    /* RESUME */
+    .resume-section {
+      background: white;
+      padding: 70px 8%;
+    }
+
+    .resume-preview {
+      max-width: 1150px;
+      margin: auto;
+      background: #202020;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .resume-preview object {
+      display: block;
+      width: 100%;
+      height: 900px;
+      border: 0;
+    }
+
+    .resume-preview p {
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .resume-preview a { color: white; }
+
     /* CONTACT */
     .contact {
       background: white;
@@ -357,6 +386,9 @@
 
       .portfolio { padding: 55px 6%; }
       .portfolio-grid { grid-template-columns: 1fr; }
+
+      .resume-section { padding: 55px 6%; }
+      .resume-preview object { height: 600px; }
 
       .contact { padding: 55px 6%; }
       .social-links { gap: 12px; }
@@ -486,7 +518,7 @@
     </div>
   </section>
 
-  <!-- NEW DIVIDER: FUN PICS / MY PORTFOLIO -->
+  <!-- DIVIDER: FUN PICS / MY PORTFOLIO -->
   <div class="section-divider" aria-hidden="true">
     <div class="section-divider-line"></div>
   </div>
@@ -523,6 +555,34 @@
 
     </div>
   </section>
+
+  <!-- RESUME -->
+  <section class="resume-section" id="resume">
+    <h2 class="section-heading">Resume</h2>
+
+    <div class="resume-preview">
+      <object
+        data="Resume%20Alexander%20Lam.pdf#view=FitH"
+        type="application/pdf"
+        aria-label="Alexander Lam resume">
+
+        <p>
+          <a
+            href="Resume%20Alexander%20Lam.pdf"
+            target="_blank"
+            rel="noopener noreferrer">
+            View Resume (PDF)
+          </a>
+        </p>
+
+      </object>
+    </div>
+  </section>
+
+  <!-- DIVIDER: RESUME / CONTACT -->
+  <div class="section-divider" aria-hidden="true">
+    <div class="section-divider-line"></div>
+  </div>
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
